@@ -1,0 +1,12 @@
+{
+    "appDescription": "My Awesome App", 
+    "appID": "com.example.MyAwesomeApp", 
+    "appName": "My Awesome App", 
+    "appVersion": "0.1.0", 
+    "authorEmail": "author@example.com", 
+    "authorName": "Tony Stark", 
+    "authorWebsite": "https://www.example.com", 
+    "showFullscreen": "false", 
+    "targetPlatform": "win32-x64", 
+    "templateName": "electron"
+}
