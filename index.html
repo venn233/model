@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Awesome Verge3D App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Verge3D Web Application">
+
+  <!-- Verge3D runtime -->
+  <script src="my_awesome_app.js"></script>
+</head>
+
+<body style="margin:0; overflow:hidden;">
+
+  <!-- WebGL 容器 -->
+  <div id="v3d-container" style="width:100%; height:100%;"></div>
+
+  <script>
+    // 初始化 Verge3D 应用
+    document.addEventListener("DOMContentLoaded", function () {
+      var app = new v3d.App("v3d-container", null, { 
+        alpha: false, 
+        premultipliedAlpha: true, 
+        antialias: true, 
+        preserveDrawingBuffer: false 
+      });
+
+      // 加载场景
+      app.loadScene("my_awesome_app.gltf", function () {
+        app.enableControls();   // 启用鼠标/触控操作
+        app.run();              // 运行渲染循环
+      });
+    });
+  </script>
+
+</body>
+</html>
